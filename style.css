@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding-top: 1.5rem;
+  font-family: Arial, sans-serif;
+  color: #5a4734;
+  background: #f7efe4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header {
+  font-size: 2rem;
+  color: #6a533f;
+  letter-spacing: 0.01em;
+  margin-bottom: 1rem;
+}
+
+.container {
+  width: min(95%, 380px);
+  padding: 24px 22px;
+  background: #fff8f0;
+  border-radius: 20px;
+  box-shadow: 0 16px 28px rgba(106, 81, 55, 0.12);
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  text-align: center;
+}
+
+.select-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.select-row span {
+  color: #8a6f58;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #dcc7b1;
+  border-radius: 12px;
+  background: #fffdf9;
+  color: #5a4734;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+input:hover,
+select:hover {
+  border-color: #c8ab8e;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #b29476;
+  box-shadow: 0 0 0 3px rgba(178, 148, 118, 0.16);
+}
+
+button {
+  background: #c79b6c;
+  color: #fff8f3;
+  border-color: #c79b6c;
+  cursor: pointer;
+  width: auto;
+  min-width: 140px;
+}
+
+button:hover {
+  background: #b07f55;
+}
+
+#outputTemp {
+  min-height: 1.5rem;
+  color: #5a4734;
+  font-weight: 600;
+}
